@@ -49,7 +49,7 @@
 		576ACCAA2901889C00B763D5 /* MotionAnimationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 576ACCA92901889C00B763D5 /* MotionAnimationView.swift */; };
 		576ACCAC2901949100B763D5 /* AnimalGridItemView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 576ACCAB2901949100B763D5 /* AnimalGridItemView.swift */; };
 		576ACCB22901988000B763D5 /* Stickers.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 576ACCB12901988000B763D5 /* Stickers.xcassets */; };
-		576ACCB62901988000B763D5 /* Stickers.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 576ACCAF2901987E00B763D5 /* Stickers.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		576ACCB62901988000B763D5 /* Stickers.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 576ACCAF2901987E00B763D5 /* Stickers.appex */; platformFilter = ios; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		576ACCBC290199F000B763D5 /* CreditsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 576ACCBB290199F000B763D5 /* CreditsView.swift */; };
 		576ACCBF29019B1D00B763D5 /* CenterModifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = 576ACCBE29019B1D00B763D5 /* CenterModifier.swift */; };
 /* End PBXBuildFile section */
@@ -127,6 +127,7 @@
 		576ACCB32901988000B763D5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		576ACCBB290199F000B763D5 /* CreditsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreditsView.swift; sourceTree = "<group>"; };
 		576ACCBE29019B1D00B763D5 /* CenterModifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CenterModifier.swift; sourceTree = "<group>"; };
+		576ACCC029019BD500B763D5 /* Africa.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Africa.entitlements; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -161,6 +162,7 @@
 		576ACC4C2900451800B763D5 /* Africa */ = {
 			isa = PBXGroup;
 			children = (
+				576ACCC029019BD500B763D5 /* Africa.entitlements */,
 				576ACCBD29019B0E00B763D5 /* Modifier */,
 				576ACC7A2900476C00B763D5 /* App */,
 				576ACC83290048E800B763D5 /* View */,
@@ -438,6 +440,7 @@
 /* Begin PBXTargetDependency section */
 		576ACCB52901988000B763D5 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
+			platformFilter = ios;
 			target = 576ACCAE2901987E00B763D5 /* Stickers */;
 			targetProxy = 576ACCB42901988000B763D5 /* PBXContainerItemProxy */;
 		};
@@ -563,6 +566,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = Africa/Africa.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"Africa/Preview Content\"";
@@ -582,6 +586,7 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = branco.marygimm.Africa;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTS_MACCATALYST = YES;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -593,6 +598,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = Africa/Africa.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"Africa/Preview Content\"";
@@ -612,6 +618,7 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = branco.marygimm.Africa;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTS_MACCATALYST = YES;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -633,6 +640,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = branco.marygimm.Africa.Stickers;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
+				SUPPORTS_MACCATALYST = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -653,6 +661,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = branco.marygimm.Africa.Stickers;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
+				SUPPORTS_MACCATALYST = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
