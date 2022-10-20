@@ -13,6 +13,9 @@ struct GalleryView: View {
     
     let animals: [Animal] = Bundle.main.decode("animals.json")
     
+    let hapticImpact = UIImpactFeedbackGenerator(style: .medium)
+
+    
     //Simple grid definition
    // let gridLayout: [GridItem] = [
    //     GridItem(.flexible()),
@@ -62,9 +65,11 @@ struct GalleryView: View {
                             .overlay(Circle().stroke(Color.white, lineWidth: 1))
                             .onTapGesture {
                                 selectedAnimal = item.image
+                                hapticImpact.impactOccurred()
                             }
                     }//: Loop
                 } // Grid
+                .animation(Animation.easeIn, value: UUID())
                 .onAppear {
                     gridSwitch()
                 }
