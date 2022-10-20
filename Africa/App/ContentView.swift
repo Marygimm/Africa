@@ -15,7 +15,34 @@ struct ContentView: View {
     
     @State private var isGridViewActive: Bool = false
     
-    let gridLayout: [GridItem] = Array(repeating: GridItem(.flexible()), count: 2)
+    @State private var gridLayout: [GridItem] = [GridItem(.flexible())]
+    
+    @State private var gridColum: Int = 1
+    
+    @State private var toolbarIcon: String = "square.grid.2x2"
+    
+    //MARK: - Functions
+    
+    func gridSwitch() {
+        
+        // 1 % 3  + 1 = 2
+        // 2 % 3 + 1 = 3
+        // 3 % 3 + 1 = 1
+        gridLayout = Array(repeating: .init(.flexible()), count: gridLayout.count % 3 + 1)
+        gridColum = gridLayout.count
+        
+        //Toolbar image
+        switch gridColum {
+        case 1:
+            toolbarIcon = "square.grid.2x2"
+        case 2:
+            toolbarIcon = "square.grid.3x2"
+        case 3:
+            toolbarIcon = "rectangle.grid.1x2"
+        default:
+            toolbarIcon = "square.grid.2x2"
+        }
+    }
     
     
     //MARK: - Body
@@ -59,14 +86,15 @@ struct ContentView: View {
                             isGridViewActive = false
                             haptics.impactOccurred()
                         }) {
-                            Image(systemName: "square.fill.text.grid.1x2")
+                            Image(systemName: toolbarIcon)
                                 .font(.title2)
                                 .foregroundColor(isGridViewActive ? .primary : .accentColor)
                         }
-                        
+                        // Grid
                         Button(action: {
                             isGridViewActive = true
                             haptics.impactOccurred()
+                            gridSwitch()
                         }) {
                             Image(systemName: "square.grid.2x2")
                                 .font(.title2)
