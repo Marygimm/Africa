@@ -86,7 +86,7 @@ struct ContentView: View {
                             isGridViewActive = false
                             haptics.impactOccurred()
                         }) {
-                            Image(systemName: toolbarIcon)
+                            Image(systemName: "square.fill.text.grid.1x2")
                                 .font(.title2)
                                 .foregroundColor(isGridViewActive ? .primary : .accentColor)
                         }
@@ -96,7 +96,7 @@ struct ContentView: View {
                             haptics.impactOccurred()
                             gridSwitch()
                         }) {
-                            Image(systemName: "square.grid.2x2")
+                            Image(systemName: toolbarIcon)
                                 .font(.title2)
                                 .foregroundColor(isGridViewActive ? .accentColor : .primary)
                         }
