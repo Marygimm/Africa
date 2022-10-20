@@ -8,8 +8,16 @@
 import SwiftUI
 
 struct GalleryView: View {
+    //MARK: - Properties
+    
+    
+    //MARK: - Body
     var body: some View {
-        Text("Galery")
+        ScrollView(.vertical, showsIndicators: false) {
+            Text("Galery")
+        } //: Scroll
+        .frame(maxWidth: .infinity, maxHeight: .infinity)
+        .background(MotionAnimationView())
     }
 }
 
