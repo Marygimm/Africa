@@ -45,6 +45,7 @@
 		576ACCA1290171E600B763D5 /* VideoPlayerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 576ACCA0290171E600B763D5 /* VideoPlayerView.swift */; };
 		576ACCA42901729A00B763D5 /* VideoPlayerHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 576ACCA32901729A00B763D5 /* VideoPlayerHelper.swift */; };
 		576ACCA62901759A00B763D5 /* LocationModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 576ACCA52901759A00B763D5 /* LocationModel.swift */; };
+		576ACCA82901783200B763D5 /* MapAnnotationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 576ACCA72901783200B763D5 /* MapAnnotationView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -88,6 +89,7 @@
 		576ACCA0290171E600B763D5 /* VideoPlayerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoPlayerView.swift; sourceTree = "<group>"; };
 		576ACCA32901729A00B763D5 /* VideoPlayerHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoPlayerHelper.swift; sourceTree = "<group>"; };
 		576ACCA52901759A00B763D5 /* LocationModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationModel.swift; sourceTree = "<group>"; };
+		576ACCA72901783200B763D5 /* MapAnnotationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapAnnotationView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -196,6 +198,7 @@
 				576ACC9A290169EF00B763D5 /* ExternalWebLinkView.swift */,
 				576ACC9E29016D5000B763D5 /* VideoListItemView.swift */,
 				576ACCA0290171E600B763D5 /* VideoPlayerView.swift */,
+				576ACCA72901783200B763D5 /* MapAnnotationView.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -324,6 +327,7 @@
 				576ACCA42901729A00B763D5 /* VideoPlayerHelper.swift in Sources */,
 				576ACC952900ABB900B763D5 /* InsetGallery.swift in Sources */,
 				576ACC9B290169EF00B763D5 /* ExternalWebLinkView.swift in Sources */,
+				576ACCA82901783200B763D5 /* MapAnnotationView.swift in Sources */,
 				576ACC7C2900479800B763D5 /* VideoListView.swift in Sources */,
 				576ACC9D29016CFD00B763D5 /* VideoModel.swift in Sources */,
 				576ACC80290047BB00B763D5 /* GalleryView.swift in Sources */,
